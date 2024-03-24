@@ -1,0 +1,150 @@
+html {
+	scroll-behavior: smooth;
+}
+body {
+	margin: 0px;
+	font-family: Verdana;
+}
+nav {
+	position: fixed;
+	background-color: whitesmoke;
+	margin: 15px;
+	border-radius: 5px;
+	width: calc(100% - 30px);
+}
+.menu-container {
+	display: flex;
+	align-items: center;
+}
+.menu-container h1 {
+	margin-right: auto;
+	margin-left: 20px;
+}
+.menu {
+	list-style-type: none;
+	margin: 0;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+.menu li {
+	display: block;
+	color: #333;
+	text-align: center;
+	text-decoration: none;
+	padding: 5px;
+}
+.menu li a {
+	padding: 15px 30px;
+	color: #333;
+	text-decoration: none;
+}
+.menu li a:hover, .active {
+	border-radius: 5px;
+	background-color: #ddd;
+}
+section h1 {
+	text-align: center;
+}
+#tentang, #profile, #kontak{
+	padding-top: 100px;
+}
+.container {
+	margin: 3%;
+}
+#profile, #kontak{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+#profile p {
+	text-align: justify;
+}
+.card {
+	padding: 20px;
+	background-color: whitesmoke;
+	border-radius: 5px;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.card a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    padding-top: 15px;
+}
+.card a:first-child {
+    padding-top: 0px;
+}
+.card a:hover {
+    color: inherit;
+}
+.profile-img {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+}
+table {
+	text-align: left;
+}
+.foto {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+img {
+	width: 600px;
+	max-height: 400px;
+	padding: 10px;
+}
+#video, #audio {
+	text-align: center;
+}
+@media screen and (max-width: 768px) {
+	nav {
+        margin: 10px;
+        width: calc(100% - 20px);
+    }
+    .menu-container h1 {
+        margin-left: 10px;
+        font-size: 1.5em;
+    }
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .menu li {
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+    .menu li a {
+        padding: 10px 20px;
+    }
+	.container {
+		margin: 5%;
+	}
+	#tentang {
+		padding-top: 230px;
+	}
+	#profile {
+		padding-top: 50px;
+		flex-direction: column;
+	}
+	.foto img {
+		width: 100%;
+		max-height: 300px;
+		padding: 5px;
+	}
+	video, audio {
+		max-width: 100%;
+		height: auto;
+	}
+}
